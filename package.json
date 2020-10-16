@@ -1,5 +1,5 @@
 {
-  "name": "node-cli-template",
+  "name": "@rajasegar/wgit",
   "version": "1.0.0",
   "description": "An awesome CLI tool in Node.js",
   "main": "index.js",
@@ -16,7 +16,7 @@
     "command-line"
   ],
   "author": "Rajasegar Chandran <rajasegar.c@gmail.com>",
-  "repository": "rajasegar/node-cli-template",
+  "repository": "rajasegar/wgit",
   "license": "MIT",
   "devDependencies": {
     "@semantic-release/changelog": "^5.0.1",
@@ -46,5 +46,10 @@
       ],
       "@semantic-release/github"
     ]
+  },
+  "dependencies": {
+    "@octokit/rest": "^18.0.6",
+    "dotenv": "^8.2.0",
+    "prompts": "^2.3.2"
   }
 }

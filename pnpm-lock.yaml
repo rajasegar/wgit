@@ -1,3 +1,7 @@
+dependencies:
+  '@octokit/rest': 18.0.6
+  dotenv: 8.2.0
+  prompts: 2.3.2
 devDependencies:
   '@semantic-release/changelog': 5.0.1_semantic-release@17.1.1
   '@semantic-release/git': 9.0.0_semantic-release@17.1.1
@@ -53,8 +57,7 @@ packages:
       integrity: sha512-1V9XOY4rDW0rehzbrcqAmHnz8e7SKvX27gh8Gt2WgB0+pdzdiLV83p72kZPU+jvMbS1qU5mauP2iOvO8rhmurQ==
   /@octokit/auth-token/2.4.2:
     dependencies:
-      '@octokit/types': 5.4.0
-    dev: true
+      '@octokit/types': 5.5.0
     resolution:
       integrity: sha512-jE/lE/IKIz2v1+/P0u4fJqv0kYwXOTujKemJMFr6FeopsxlIK3+wKDCJGnysg81XID5TgZQbIfuJ5J0lnTiuyQ==
   /@octokit/core/2.5.4:
@@ -68,6 +71,17 @@ packages:
     dev: true
     resolution:
       integrity: sha512-HCp8yKQfTITYK+Nd09MHzAlP1v3Ii/oCohv0/TW9rhSLvzb98BOVs2QmVYuloE6a3l6LsfyGIwb6Pc4ycgWlIQ==
+  /@octokit/core/3.1.2:
+    dependencies:
+      '@octokit/auth-token': 2.4.2
+      '@octokit/graphql': 4.5.6
+      '@octokit/request': 5.4.9
+      '@octokit/types': 5.5.0
+      before-after-hook: 2.1.0
+      universal-user-agent: 6.0.0
+    dev: false
+    resolution:
+      integrity: sha512-AInOFULmwOa7+NFi9F8DlDkm5qtZVmDQayi7TUgChE3yeIGPq0Y+6cAEXPexQ3Ea+uZy66hKEazR7DJyU+4wfw==
   /@octokit/endpoint/6.0.5:
     dependencies:
       '@octokit/types': 5.4.0
@@ -76,6 +90,14 @@ packages:
     dev: true
     resolution:
       integrity: sha512-70K5u6zd45ItOny6aHQAsea8HHQjlQq85yqOMe+Aj8dkhN2qSJ9T+Q3YjUjEYfPRBcuUWNgMn62DQnP/4LAIiQ==
+  /@octokit/endpoint/6.0.8:
+    dependencies:
+      '@octokit/types': 5.5.0
+      is-plain-object: 5.0.0
+      universal-user-agent: 6.0.0
+    dev: false
+    resolution:
+      integrity: sha512-MuRrgv+bM4Q+e9uEvxAB/Kf+Sj0O2JAOBA131uo1o6lgdq1iS8ejKwtqHgdfY91V3rN9R/hdGKFiQYMzVzVBEQ==
   /@octokit/graphql/4.5.4:
     dependencies:
       '@octokit/request': 5.4.7
@@ -84,14 +106,30 @@ packages:
     dev: true
     resolution:
       integrity: sha512-ITpZ+dQc0cXAW1FmDkHJJM+8Lb6anUnin0VB5hLBilnYVdLC0ICFU/KIvT7OXfW9S81DE3U4Vx2EypDG1OYaPA==
+  /@octokit/graphql/4.5.6:
+    dependencies:
+      '@octokit/request': 5.4.9
+      '@octokit/types': 5.5.0
+      universal-user-agent: 6.0.0
+    dev: false
+    resolution:
+      integrity: sha512-Rry+unqKTa3svswT2ZAuqenpLrzJd+JTv89LTeVa5UM/5OX8o4KTkPL7/1ABq4f/ZkELb0XEK/2IEoYwykcLXg==
   /@octokit/plugin-paginate-rest/2.3.0:
     dependencies:
       '@octokit/types': 5.4.0
     dev: true
     resolution:
       integrity: sha512-Ye2ZJreP0ZlqJQz8fz+hXvrEAEYK4ay7br1eDpWzr6j76VXs/gKqxFcH8qRzkB3fo/2xh4Vy9VtGii4ZDc9qlA==
+  /@octokit/plugin-paginate-rest/2.4.0_@octokit+core@3.1.2:
+    dependencies:
+      '@octokit/core': 3.1.2
+      '@octokit/types': 5.5.0
+    dev: false
+    peerDependencies:
+      '@octokit/core': '>=2'
+    resolution:
+      integrity: sha512-YT6Klz3LLH6/nNgi0pheJnUmTFW4kVnxGft+v8Itc41IIcjl7y1C8TatmKQBbCSuTSNFXO5pCENnqg6sjwpJhg==
   /@octokit/plugin-request-log/1.0.0:
-    dev: true
     resolution:
       integrity: sha512-ywoxP68aOT3zHCLgWZgwUJatiENeHE7xJzYjfz8WI0goynp96wETBF+d95b8g/uL4QmS6owPVlaxiz3wyMAzcw==
   /@octokit/plugin-rest-endpoint-methods/3.17.0:
@@ -101,12 +139,18 @@ packages:
     dev: true
     resolution:
       integrity: sha512-NFV3vq7GgoO2TrkyBRUOwflkfTYkFKS0tLAPym7RNpkwLCttqShaEGjthOsPEEL+7LFcYv3mU24+F2yVd3npmg==
+  /@octokit/plugin-rest-endpoint-methods/4.2.0:
+    dependencies:
+      '@octokit/types': 5.5.0
+      deprecation: 2.3.1
+    dev: false
+    resolution:
+      integrity: sha512-1/qn1q1C1hGz6W/iEDm9DoyNoG/xdFDt78E3eZ5hHeUfJTLJgyAMdj9chL/cNBHjcjd+FH5aO1x0VCqR2RE0mw==
   /@octokit/request-error/2.0.2:
     dependencies:
-      '@octokit/types': 5.4.0
+      '@octokit/types': 5.5.0
       deprecation: 2.3.1
       once: 1.4.0
-    dev: true
     resolution:
       integrity: sha512-2BrmnvVSV1MXQvEkrb9zwzP0wXFNbPJij922kYBTLIlIafukrGOb+ABBT2+c6wZiuyWDH1K1zmjGQ0toN/wMWw==
   /@octokit/request/5.4.7:
@@ -122,6 +166,19 @@ packages:
     dev: true
     resolution:
       integrity: sha512-FN22xUDP0i0uF38YMbOfx6TotpcENP5W8yJM1e/LieGXn6IoRxDMnBf7tx5RKSW4xuUZ/1P04NFZy5iY3Rax1A==
+  /@octokit/request/5.4.9:
+    dependencies:
+      '@octokit/endpoint': 6.0.8
+      '@octokit/request-error': 2.0.2
+      '@octokit/types': 5.5.0
+      deprecation: 2.3.1
+      is-plain-object: 5.0.0
+      node-fetch: 2.6.1
+      once: 1.4.0
+      universal-user-agent: 6.0.0
+    dev: false
+    resolution:
+      integrity: sha512-CzwVvRyimIM1h2n9pLVYfTDmX9m+KHSgCpqPsY8F1NdEK8IaWqXhSBXsdjOBFZSpEcxNEeg4p0UO9cQ8EnOCLA==
   /@octokit/rest/17.11.2:
     dependencies:
       '@octokit/core': 2.5.4
@@ -131,6 +188,15 @@ packages:
     dev: true
     resolution:
       integrity: sha512-4jTmn8WossTUaLfNDfXk4fVJgbz5JgZE8eCs4BvIb52lvIH8rpVMD1fgRCrHbSd6LRPE5JFZSfAEtszrOq3ZFQ==
+  /@octokit/rest/18.0.6:
+    dependencies:
+      '@octokit/core': 3.1.2
+      '@octokit/plugin-paginate-rest': 2.4.0_@octokit+core@3.1.2
+      '@octokit/plugin-request-log': 1.0.0
+      '@octokit/plugin-rest-endpoint-methods': 4.2.0
+    dev: false
+    resolution:
+      integrity: sha512-ES4lZBKPJMX/yUoQjAZiyFjei9pJ4lTTfb9k7OtYoUzKPDLl/M8jiHqt6qeSauyU4eZGLw0sgP1WiQl9FYeM5w==
   /@octokit/types/4.1.10:
     dependencies:
       '@types/node': 14.0.27
@@ -143,6 +209,11 @@ packages:
     dev: true
     resolution:
       integrity: sha512-D/uotqF69M50OIlwMqgyIg9PuLT2daOiBAYF0P40I2ekFA2ESwwBY5dxZe/UhXdPvIbNKDzuZmQrO7rMpuFbcg==
+  /@octokit/types/5.5.0:
+    dependencies:
+      '@types/node': 14.11.8
+    resolution:
+      integrity: sha512-UZ1pErDue6bZNjYOotCNveTXArOMZQFG6hKJfOnGnulVCMcVVi7YIIuuR4WfBhjo7zgpmzn/BkPDnUXtNx+PcQ==
   /@semantic-release/changelog/5.0.1_semantic-release@17.1.1:
     dependencies:
       '@semantic-release/error': 2.2.0
@@ -283,6 +354,9 @@ packages:
     dev: true
     resolution:
       integrity: sha512-kVrqXhbclHNHGu9ztnAwSncIgJv/FaxmzXJvGXNdcCpV1b8u1/Mi6z6m0vwy0LzKeXFTPLH0NzwmoJ3fNCIq0g==
+  /@types/node/14.11.8:
+    resolution:
+      integrity: sha512-KPcKqKm5UKDkaYPTuXSx8wEP7vE9GnuaXIZKijwRYcePpZFDVuy2a57LarFKiORbHOuTOOwYzxVxcUzsh2P2Pw==
   /@types/normalize-package-data/2.4.0:
     dev: true
     resolution:
@@ -434,7 +508,6 @@ packages:
     resolution:
       integrity: sha1-ibTRmasr7kneFk6gK4nORi1xt2c=
   /before-after-hook/2.1.0:
-    dev: true
     resolution:
       integrity: sha512-IWIbu7pMqyw3EAJHzzHbWa85b6oud/yfKYg5rqB5hNE8CeMi3nX+2C2sj0HswfblST86hpVEOAb9x34NZd6P7A==
   /bottleneck/2.19.5:
@@ -697,7 +770,6 @@ packages:
     resolution:
       integrity: sha1-s2nW+128E+7PUk+RsHD+7cNXzzQ=
   /deprecation/2.3.1:
-    dev: true
     resolution:
       integrity: sha512-xmHIy4F3scKVwMsQ4WnVaS8bHOx0DmVwRywosKhaILI0ywMDWPtBSku2HNxRvF7jtwDRsoEwYQSfbxj8b7RlJQ==
   /dir-glob/3.0.1:
@@ -724,6 +796,12 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-uEUyaDKoSQ1M4Oq8l45hSE26SnTxL6snNnqvK/VWx5wJhmff5z0FUVJDKDanor/6w3kzE3i7XZOk+7wC0EXr1A==
+  /dotenv/8.2.0:
+    dev: false
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw==
   /duplexer2/0.1.4:
     dependencies:
       readable-stream: 2.3.7
@@ -1381,6 +1459,12 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-5Aw8LLVsDlZsETVMhoMXzqsXwQqr/0vlnBYzIXJbYo2F4yYlhLHs+Ez7Bod7IIQKWkJbJfxrWD7pA1Dw1TKrwA==
+  /is-plain-object/5.0.0:
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha512-VRSzKkbMm5jMDoKLbltAkFQ5Qr7VDiTFGXxYFXXowVj387GeGNOCsOH6Msy00SGZ3Fp84b1Naa1psqgcCIEP5Q==
   /is-stream/1.1.0:
     dev: true
     engines:
@@ -1475,6 +1559,12 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==
+  /kleur/3.0.3:
+    dev: false
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==
   /levn/0.4.1:
     dependencies:
       prelude-ls: 1.2.1
@@ -1716,6 +1806,12 @@ packages:
       node: 4.x || >=6.0.0
     resolution:
       integrity: sha512-8dG4H5ujfvFiqDmVu9fQ5bOHUC15JMjMY/Zumv26oOvvVJjM67KF8koCWIabKQ1GJIa9r2mMZscBq/TbdOcmNA==
+  /node-fetch/2.6.1:
+    dev: false
+    engines:
+      node: 4.x || >=6.0.0
+    resolution:
+      integrity: sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==
   /normalize-package-data/2.5.0:
     dependencies:
       hosted-git-info: 2.8.8
@@ -1881,7 +1977,6 @@ packages:
   /once/1.4.0:
     dependencies:
       wrappy: 1.0.2
-    dev: true
     resolution:
       integrity: sha1-WDsap3WWHUsROsF9nFC6753Xa9E=
   /onetime/5.1.2:
@@ -2125,6 +2220,15 @@ packages:
       node: '>=0.4.0'
     resolution:
       integrity: sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
+  /prompts/2.3.2:
+    dependencies:
+      kleur: 3.0.3
+      sisteransi: 1.0.5
+    dev: false
+    engines:
+      node: '>= 6'
+    resolution:
+      integrity: sha512-Q06uKs2CkNYVID0VqwfAl9mipo99zkBv/n2JtWY89Yxa3ZabWSrs0e2KTudKVa3peLUvYXMefDqIleLPVUBZMA==
   /pump/3.0.0:
     dependencies:
       end-of-stream: 1.4.4
@@ -2408,6 +2512,10 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-iuh+gPf28RkltuJC7W5MRi6XAjTDCAPC/prJUpQoG4vIP3MJZ+GTydVnodXA7pwvTKb2cA0m9OFZW/cdWy/I/w==
+  /sisteransi/1.0.5:
+    dev: false
+    resolution:
+      integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==
   /slash/3.0.0:
     dev: true
     engines:
@@ -2737,7 +2845,6 @@ packages:
     resolution:
       integrity: sha512-B5TPtzZleXyPrUMKCpEHFmVhMN6EhmJYjG5PQna9s7mXeSqGTLap4OpqLl5FCEFUI3UBmllkETwKf/db66Y54Q==
   /universal-user-agent/6.0.0:
-    dev: true
     resolution:
       integrity: sha512-isyNax3wXoKaulPDZWHQqbmIx1k2tb9fb3GGDBRxCscfYV2Ch7WxPArBsFEG8s/safwXTT7H4QGhaIkTp9447w==
   /universalify/1.0.0:
@@ -2820,7 +2927,6 @@ packages:
     resolution:
       integrity: sha512-r6lPcBGxZXlIcymEu7InxDMhdW0KDxpLgoFLcguasxCaJ/SOIZwINatK9KY/tf+ZrlywOKU0UDj3ATXUBfxJXA==
   /wrappy/1.0.2:
-    dev: true
     resolution:
       integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
   /write/1.0.3:
@@ -2879,11 +2985,14 @@ packages:
     resolution:
       integrity: sha512-aePbxDmcYW++PaqBsJ+HYUFwCdv4LVvdnhBy78E57PIor8/OVvhMrADFFEDh8DHDFRv/O9i3lPhsENjO7QX0+A==
 specifiers:
+  '@octokit/rest': ^18.0.6
   '@semantic-release/changelog': ^5.0.1
   '@semantic-release/git': ^9.0.0
+  dotenv: ^8.2.0
   eslint: ^7.7.0
   eslint-config-prettier: ^6.11.0
   eslint-plugin-node: ^11.1.0
   eslint-plugin-prettier: ^3.1.4
   prettier: ^2.1.1
+  prompts: ^2.3.2
   semantic-release: ^17.1.1
