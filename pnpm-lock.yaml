@@ -6,7 +6,7 @@ specifiers:
   '@octokit/rest': ^18.0.6
   '@semantic-release/changelog': 6.0.1
   '@semantic-release/git': 10.0.1
-  dotenv: ^10.0.0
+  dotenv: ^13.0.0
   eslint: 8.7.0
   eslint-config-prettier: 8.3.0
   eslint-plugin-node: 11.1.0
@@ -18,7 +18,7 @@ specifiers:
 
 dependencies:
   '@octokit/rest': 18.0.6
-  dotenv: 10.0.0
+  dotenv: 13.0.1
   prompts: 2.3.2
 
 devDependencies:
@@ -909,9 +909,9 @@ packages:
       is-obj: 2.0.0
     dev: true
 
-  /dotenv/10.0.0:
-    resolution: {integrity: sha512-rlBi9d8jpv9Sf1klPjNfFAuWDjKLwTIJJ/VxtoTwIR6hnZxcEOQCZg2oIL3MWBYw5GpUDKOEnND7LXTbIpQ03Q==}
-    engines: {node: '>=10'}
+  /dotenv/13.0.1:
+    resolution: {integrity: sha512-u3KAkK+VHk01+D7V6SFtSJl2JScX1Yi4anKsKXS4oT8s8LnL5xgJe7XFAZ1bSsOfAmxU54OwOuhaLv3v70oXgw==}
+    engines: {node: '>=12'}
     dev: false
 
   /duplexer2/0.1.4:
