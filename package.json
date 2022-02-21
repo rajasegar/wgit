@@ -1,6 +1,6 @@
 {
   "name": "@rajasegar/wgit",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "An awesome CLI tool in Node.js",
   "main": "index.js",
   "bin": {

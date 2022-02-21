@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/rajasegar/wgit/compare/v1.0.3...v1.0.4) (2022-02-21)
+
+
+### Bug Fixes
+
+* **deps:** update dependency dotenv to v16 ([6764748](https://github.com/rajasegar/wgit/commit/6764748a99bc2c9a04f466ea9be72f286e318107))
+
 ## [1.0.3](https://github.com/rajasegar/wgit/compare/v1.0.2...v1.0.3) (2022-01-21)
 
 
