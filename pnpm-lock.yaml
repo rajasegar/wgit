@@ -6,7 +6,7 @@ specifiers:
   '@octokit/rest': ^18.0.6
   '@semantic-release/changelog': 6.0.1
   '@semantic-release/git': 10.0.1
-  dotenv: ^14.0.0
+  dotenv: ^16.0.0
   eslint: 8.9.0
   eslint-config-prettier: 8.4.0
   eslint-plugin-node: 11.1.0
@@ -18,7 +18,7 @@ specifiers:
 
 dependencies:
   '@octokit/rest': 18.0.6
-  dotenv: 14.1.0
+  dotenv: 16.0.0
   prompts: 2.3.2
 
 devDependencies:
@@ -966,8 +966,8 @@ packages:
       is-obj: 2.0.0
     dev: true
 
-  /dotenv/14.1.0:
-    resolution: {integrity: sha512-h8V+Yfa8m0YSjf3Rgbno51cxWldb4PEixIJVL55VmW7uAfeLQKiaPrEUiBps+ARK9MeqjJgTf269OMmu6lOODQ==}
+  /dotenv/16.0.0:
+    resolution: {integrity: sha512-qD9WU0MPM4SWLPJy/r2Be+2WgQj8plChsyrCNQzW/0WjvcJQiKQJ9mH3ZgB3fxbUUxgc/11ZJ0Fi5KiimWGz2Q==}
     engines: {node: '>=12'}
     dev: false
 
