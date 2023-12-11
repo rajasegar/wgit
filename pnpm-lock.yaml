@@ -11,7 +11,7 @@ specifiers:
   eslint-config-prettier: 8.10.0
   eslint-plugin-node: 11.1.0
   eslint-plugin-prettier: 4.2.1
-  husky: 7.0.4
+  husky: 8.0.3
   prettier: 2.8.8
   prompts: ^2.3.2
   semantic-release: 19.0.5
@@ -30,7 +30,7 @@ devDependencies:
   eslint-config-prettier: 8.10.0_eslint@8.51.0
   eslint-plugin-node: 11.1.0_eslint@8.51.0
   eslint-plugin-prettier: 4.2.1_4545655f535a56a85553a0cf101d9aae
-  husky: 7.0.4
+  husky: 8.0.3
   prettier: 2.8.8
   semantic-release: 19.0.5
 
@@ -1550,9 +1550,9 @@ packages:
     engines: {node: '>=10.17.0'}
     dev: true
 
-  /husky/7.0.4:
-    resolution: {integrity: sha512-vbaCKN2QLtP/vD4yvs6iz6hBEo6wkSzs8HpRah1Z6aGmF2KW5PdYuAd7uX5a+OyBZHBhd+TFLqgjUgytQr4RvQ==}
-    engines: {node: '>=12'}
+  /husky/8.0.3:
+    resolution: {integrity: sha512-+dQSyqPh4x1hlO1swXBiNb2HzTDN1I2IGLQx1GrBuiqFJfoMrnZWwVmatvSiO+Iz8fBUnf+lekwNo4c2LlXItg==}
+    engines: {node: '>=14'}
     hasBin: true
     dev: true
 
